@@ -10,54 +10,7 @@ Create a function that:
 *   **Use underscore.js for all operations**
 */
 
-/*function solve(){
-  return function (books) {
-	  _.chain(books)
-	  .groupBy('author')
-	  .each(function (booksByAuthor, author) {
-		 var maxCount = 0;
-		 var mostPopularAuthor; 
-		 
-		if (maxCount < booksByAuthor.length) {
-			maxCount = booksByAuthor.length;
-			mostPopularAuthor = author;
-		}
-	   });
 
-	console.log(mostPopularAutor);
-
-  };
-}
-_PERSONARRAY = [{name:"becky",age:7},{name:"asi",age:9},{name:"becky",age:2},{name:"asi",age:7}];
-
-_UNIQUEAGEARRAY = _.chain(_PERSONARRAY).countBy("name")
-.pairs().max(_.last).first().value();
-
-document.body.innerHTML = JSON.stringify(_UNIQUEAGEARRAY);  
-module.exports = solve; 
-
-_.mixin({strReverse: _.str.reverse});
-var something = _.chain("hello world!").capitalize().strReverse().value();
-console.log(something); // logs "!dlrow olleH"*/
-
-/*function solve(){
-  return function (books) {  
-	 var authors = _.chain(books)
-	 .map(function(book){
-		book.authorFullName = book.author.firstName + " " + book.author.lastName;
-		return book;
-	 })
-	  .countBy('authorFullName')
-	  .value();
-	  
-	  var mostBooks = _.chain(authors)
-	  .pairs()
-	  .max(_.last)
-	  .first()
-	  .value();
-	  
-  };
-}*/
 
 function solve(){
   return function (books) {  
