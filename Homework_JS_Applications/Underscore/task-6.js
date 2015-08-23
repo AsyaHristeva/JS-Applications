@@ -30,10 +30,10 @@ function solve(){
 	  
 	  var mostPopularAuthors = _.chain(authors)
 	  .filter(function(pair) {
-		return pair[1] === maxBooks;  
+		return _.last(pair) === maxBooks;  
 	  })
 	  .each(function(pair) {
-		  console.log(pair[0]);   
+		  console.log(_.first(pair));   
 	  }); 
 	  
   };
