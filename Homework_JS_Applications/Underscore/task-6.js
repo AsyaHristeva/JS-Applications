@@ -28,7 +28,7 @@ function solve(){
 	  .last()
 	  .value();
 	  
-	  var mostPopularAuthors = _.chain(authors)
+	   _.chain(authors)
 	  .filter(function(pair) {
 		return _.last(pair) === maxBooks;  
 	  })
